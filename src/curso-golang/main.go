@@ -11,7 +11,7 @@ import (
 func main() {
 	//Rutas
 	mux := mux.NewRouter()
-	//EndPoints
+
 	mux.HandleFunc("/api/permisos", handlers.GetPermisos).Methods("GET")
 	mux.HandleFunc("/api/permisos", handlers.CreatePermiso).Methods("POST")
 	mux.HandleFunc("/api/permisos", handlers.UpdatePermiso).Methods("PUT")
